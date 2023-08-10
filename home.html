@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container-form">
+        <h1>Índice de massa corporea</h1>
+
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+        O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.</p>
+
+        <h2>Calculadora de IMC</h2>
+        <p>Informe os seguintes dados para que seu IMC seja calculado</p>
+        <form id="formulario">
+            <div class="input-cont">
+                <label id="heigth">Altura</label>
+                <input type="number" name="altura" id="altura-usu" min="0" max="100" placeholder="Digite sua altura em metros (ex: 1,75)">
+            </div>
+            <div class="input-cont">
+                <label id="weigth">Peso</label>
+                <input type="number" name="peso" id="peso-usu" min="0" max="100" placeholder="Digite seu peso em KG (ex: 65,4)">
+            </div>
+            <div>
+                <button onclick="calcular()" type="submit" id="btn-submit">Calcular</button>
+            </div>
+            <p id="imc"></p>
+        </form>
+        <h3>Resultado</h3>
+        <div class="resultado">
+            <p class="submit-form template" id="resultado"></p>
+            <script src="/js/script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
